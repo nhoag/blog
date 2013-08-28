@@ -9,18 +9,18 @@ $(function(){
     );
   }
 
-  $(".tweet").tweet({
-    username: $('.tweet').data('twitter-user'),
-    join_text: "auto",
-    avatar_size: 32,
-    count: 3,
-    loading_text: "loading tweets...",
-    auto_join_text_default: "",
-    auto_join_text_ed: "",
-    auto_join_text_ing: "",
-    auto_join_text_reply: "",
-    auto_join_text_url: ""
-  });
+  // $(".tweet").tweet({
+  //   username: $('.tweet').data('twitter-user'),
+  //   join_text: "auto",
+  //   avatar_size: 32,
+  //   count: 3,
+  //   loading_text: "loading tweets...",
+  //   auto_join_text_default: "",
+  //   auto_join_text_ed: "",
+  //   auto_join_text_ing: "",
+  //   auto_join_text_reply: "",
+  //   auto_join_text_url: ""
+  // });
 
   var instagramElement = $('.instagram');
   var instagram = {
