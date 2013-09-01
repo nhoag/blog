@@ -13,4 +13,4 @@ An excellent log analysis tool that I picked up recently from a blog post by my 
 
 Working at [Acquia](http://www.acquia.com/), we do diagnostic work with log files across lots of servers, web applications, and stack technologies. To aid our efforts at log analysis, I started a GoAccess [shell plugin](https://github.com/nhoag/goaccess-plugin) to enable traversing various servers and types of log files using aliased GoAccess commands over secure ssh tunnels.
 
-At first I was a little disappointed at the limitations of the GoAcess project, but the simplicity leaves a lot of room for enxtensibility.
+At first I was a little disappointed at the limitations of the GoAcess project, but the simplicity leaves a lot of room for extensibility.
