@@ -1,71 +1,25 @@
-pliedbyte
-=========
+# HPSTR Jekyll Theme
 
-Static Octopress Website
-=======
-# Reynard #
+They say three times the charm, so here is another free responsive Jekyll theme for you. I've learned a ton since open sourcing [my first two themes](https://mademistakes.com/work/jekyll-themes/), and wanted to try a few new things this time around. If you've used my previous themes most of this should be familiar territory.
 
-This is a fork of Adrian's great looking [foxslide](https://github.com/sevenadrian/foxslide) theme for octopress.
+## What HPSTR brings to the table:
 
-## Navbar
+* Modern and minimal design.
+* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
+* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
+* Sweet animated menu with support for drop-downs.
+* Optional [Disqus](http://disqus.com) comments and social sharing links.
+* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
+* Simple [custom 404 page](http://mmistakes.github.io/hpstr-jekyll-theme/404.html) to get you started.
+* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/hpstr-jekyll-theme/code-highlighting-post/) to make your code examples look snazzy
+* [Available in Spanish](https://github.com/cruznick/hpstr-jekyll-theme/tree/es). Thanks [@cruznick](https://github.com/cruznick)!
 
-Instead of the *About me* and the other social widgets that appear in
-the original foxslide, Reynard has a navbar. I did this because my
-blog is also my personal website and I needed a navbar to stick in a
-few custom links.
+![HPSTR Theme Preview screenshot](http://mmistakes.github.io/hpstr-jekyll-theme/images/hpstr-jekyll-theme-preview.jpg)
 
-### Sticking custom links in the Navbar
+---
 
-Adding links to `pages` or even external websites to the navbar is
-easy. Add a section like this to the `_config.yml` of your blog --
+## Getting Started
 
-````
-navigation_elements: [
-  {name: "About Me", link: "/aboutme"},
-  {name: "Code", link: "https://github.com/hyfather"}]
-````
+HPSTR takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
 
-Note that these links will open in the same window, they don't have a
-`target` attribute as of now.
-
-
-## New background
-
-I also replaced the original photo from foxslide with a wonderful black and
-white from Carrie Nelson that I found
-[here](http://www.flickr.com/photos/69912667@N07/6778147487/). It is
-licensed under [Creative
-Commons](http://creativecommons.org/licenses/by-nc-nd/2.0/) with
-"Noncommercial, Attribution and No Derivative Works".
-
-
-## Spacelab from Bootswatch
-
-Since the original foxslide is built upon Bootstrap by Twitter, it was
-simple to switch it out with
-[Spacelab](http://bootswatch.com/spacelab/).
-
-## Installation
-
-````
-$ cd blog
-$ git clone https://github.com/hyfather/reynard.git .themes/reynard
-$ rake install["reynard"]
-$ rake generate
-````
-
-## Live preview
-
-My [personal blog](http://blog.hyfather.com) uses Reynard.
-
-## Screenshots
-
-### Landing Page
-![Landing page](https://raw.github.com/hyfather/reynard/master/screenshots/landingpage.png)
-
-### Blog Post
-![Blog post](https://raw.github.com/hyfather/reynard/master/screenshots/blogpost.png)
-
-### Footer
-![Footer](https://raw.github.com/hyfather/reynard/master/screenshots/footer.png)
-
+To learn how to install and use this theme check out the [Setup Guide](https://mmistakes.github.io/hpstr-jekyll-theme/theme-setup/) for more information.
