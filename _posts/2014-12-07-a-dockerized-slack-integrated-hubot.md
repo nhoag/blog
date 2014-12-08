@@ -66,7 +66,7 @@ FROM nhoag/hubot
 MAINTAINER Nathaniel Hoag, info@nathanielhoag.com
 
 ENV HUBOT_PORT 8080
-ENV ADAPTER slack
+ENV HUBOT_ADAPTER slack
 ENV HUBOT_NAME bot-name
 ENV HUBOT_GOOGLE_API_KEY xxxxxxxxxxxxxxxxxxxxxx
 ENV HUBOT_SLACK_TOKEN xxxxxxxxxxxxxxxxxxxxx
@@ -78,7 +78,7 @@ EXPOSE ${HUBOT_PORT}
 
 WORKDIR /opt/bot
 
-CMD bin/hubot -- --adapter ${ADAPTER} --name ${HUBOT_NAME}
+CMD bin/hubot
 ```
 
 Here we're extending the public `nhoag/hubot` image created earlier by adding our private credentials as environment variables. Once this is populated with real data, the last steps are to build and run the updated image.
@@ -89,7 +89,11 @@ Below is the full deployment process that should give you a new Slack-integrated
 2. `git clone git@github.com:nhoag/bot-cfg.git`
 3. `vi ./bot-cfg/Dockerfile` (configure `ENV`s)
 4. `docker build -t="nhoag/hubot:live" ./bot-cfg/`
-5. `docker run -d -p 45678:8080 nhoag/bot:live`
+5. `docker run -d -p 45678:8080 nhoag/hubot:live`
 6. Add public Hubot address to your Slack Hubot Integration (i.e. http://2.2.2.2:45678/)
 
 Happy chatting!
+
+**Update -- 2014-12-08**
+
+Small optimization to bot-cfg to remove command arguments in favor of environment variables.
