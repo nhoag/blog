@@ -10,11 +10,12 @@ tags:
 - vagrant
 - git
 ---
+
 Recently, a bash script that I've used many times on lots of different types of servers was giving very strange results. Typically the script is called as `./script.sh info.cfg` and proceeds to run through several processes. On this occasion, I was left with `: command not found`. When I hit the script with `bash -x` I could see that both the script and the config file were giving strange results and choking on line-breaks and curly braces. I checked the bash version, which was indeed up-to-date enough. The problem turned out to be that the files were being interpreted in the wrong format!? Solution?: Run `:set ff=unix` on all of the files in vim. Nothing too complex, but this had me scratching my head for a few minutes.
 
 While on the topic of vim, I took a few swings on [Vimgolf](http://vimgolf.com/) a little while back. As a generalist in the editor sphere, I found this to be a really neat way to gain exposure to advanced vim techniques without the overhead of RTFM.
 
-While on the topic of Github-integrated learning applications :), I also dipped my toes over at [exercism.io](exercism.io). This is such a cool implementation! Polyglotism, here we come.
+While on the topic of Github-integrated learning applications :), I also dipped my toes over at [Exercism.io](http://exercism.io). This is such a cool implementation! Polyglotism, here we come.
 
 To change topics, I was working on a Drupal site that showed several custom modules enabled but not present in the site codebase. It sometimes happens that a site maintainer/developer will delete a module without properly disabling it in the website configuration. This can cause unexpected performance and behavioral issues for a site, so it's important to resolve this by reinstating the missing modules and following proper uninstallation procedure. In this case, the missing modules were in the repo history. Here's how to retrieve them.
 
