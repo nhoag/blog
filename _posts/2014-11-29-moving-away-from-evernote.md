@@ -17,13 +17,25 @@ share:
 date: 2014-11-29T21:26:34-05:00
 ---
 
-A few weeks ago, my Evernote account was unexpectedly truncated - it went from hundreds of notes to a mere handful. At that moment, Evernote for me became _'Phemernote_ (i.e. ephemeral ;)). After some poking around, I confirmed and accepted the data loss and committed to find a transparent and robust system for keeping notes.
+* * *
 
-My personal notes are mostly excerpts from daily tech ramblings. My Evernote contained passages and one-liners from projects, emails, chat transcripts, and the Web. I used it to recall information sources, as fodder for blogging, to remember tricky tech solutions and problems, and to share notes with friends and colleagues at opportune moments. All the regular stuff.
+__Update:__ It turns out I have multiple accounts and was reviewing a secondary account I'd forgotten about and had barely used. Still, it's a useful exercise to consider the worst case of data loss in a blackbox cloud system. Digging deeper into the topic of efficient and distributed notes, I found that [Brett Terpstra](http://brettterpstra.com/) has put an incredible amount of time and effort into evolving this space. Nothing yet feels fully baked, but tools such as [Popclip](http://pilotmoon.com/popclip/) (with awesome [extensions](http://brettterpstra.com/projects/bretts-popclip-extensions/)), [nvalt](http://brettterpstra.com/projects/nvalt/), [Bullseye](http://brettterpstra.com/2013/07/30/precise-web-clipping-to-markdown-with-bullseye/), and [GistBox](http://www.gistboxapp.com/) provide a lot of interesting avenues.
 
-The data loss was painful, but it highlighted a problem and provided motivation to investigate alternatives. I can't yet say that my search is complete, but following are some thoughts about [Smallest Federated Wiki](https://github.com/WardCunningham/Smallest-Federated-Wiki) and [IPython Notebook](http://ipython.org/notebook.html), along with musings around a simpler alternative.
+* * *
+
+A few weeks ago, it seemed my Evernote account was unexpectedly truncated - it went from hundreds of notes to a mere handful. Turns out I was looking at the wrong account - D'oh! Without realizing the mistake, I was suddenly very motivated to find a transparent and robust system for keeping notes.
+
+My personal notes are mostly excerpts from daily tech ramblings - passages and one-liners from projects, emails, chat transcripts, and the Web. I leverage notes to recall information sources, as fodder for blogging, to remember tricky tech solutions and problems, and to share information with friends and colleagues at opportune moments. All the regular stuff.
+
+The (presumed) data loss provided motivation to investigate alternatives. I can't yet say that my search is anywhere near complete, but following are some thoughts about [Smallest Federated Wiki](https://github.com/WardCunningham/Smallest-Federated-Wiki) and [IPython Notebook](http://ipython.org/notebook.html), along with musings around a simpler alternative.
 
 ### Smallest Federated Wiki
+
+* * *
+
+__Update:__ I recently listened to the [Javascript Jabber](http://devchat.tv/js-jabber) episode on Federated Wiki (no longer 'Smallest'). It's worth a listen if you're interested in distributed information systems.
+
+* * *
 
 Smallest Federated Wiki is an impressive distributed information system that has a lot of potential to revolutionize the Wiki-sphere. The major block for me with using this project is the investment to learn how to use it correctly. It has a dense UI and is as amorphous as they come. Up front, this reads as a deep investment of time to only possibly get my needs met.
 
