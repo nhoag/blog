@@ -28,7 +28,7 @@ Last reply received from server.
 errors: 0, replies: 1000
 ```
 
-The _Redis Mass Insertion_ documentation includes a couple of short code snippets for for generating test data and example commands for pushing data to Redis. From these snippets, I cobbled together a ruby script to generate an arbitrary number of K/V pairs to `STDOUT`:
+The _Redis Mass Insertion_ documentation includes a couple of short code snippets for generating test data and example commands for pushing data to Redis. From these snippets, I cobbled together a ruby script to generate an arbitrary number of K/V pairs to `STDOUT`:
 
 ```ruby
 #!/usr/bin/ruby
@@ -122,12 +122,12 @@ It works! On to mass inserts. As you can see above, I opted to pre-generate data
 # Redis Protocol
 $ cat proto.txt | redis-cli --pipe -h 192.3.4.5 -p 49156 > /dev/null
 $ cat proto.txt | nc 192.3.4.5 49156 > /dev/null
-$ cat proto.txt | socat - TCP:192.168.59.103:49157 > /dev/null
+$ cat proto.txt | socat - TCP:192.3.4.5:49156 > /dev/null
 
 # Flat Commands
 $ cat flat.txt | redis-cli --pipe -h 192.3.4.5 -p 49156 > /dev/null
 $ cat flat.txt | nc 192.3.4.5 49156 > /dev/null
-$ cat flat.txt | socat - TCP:192.168.59.103:49157 > /dev/null
+$ cat flat.txt | socat - TCP:192.3.4.5:49156 > /dev/null
 ```
 
 Rinse and repeat after each iteration:
