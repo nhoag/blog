@@ -1,9 +1,2 @@
-_drafts
-_site
-.blog
 .DS_Store
-.gem
-.ruby-version
-.sass-cache
-Gemfile.lock
-node_modules
+public
