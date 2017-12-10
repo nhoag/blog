@@ -25,3 +25,11 @@ bind -n C-k send-keys -R \; clear-history
 
 That's all for now. Happy multiplexing!
 
+Update:
+
+I found that the above pane clear declaration was a little aggressive in that the prompt string doesn't re-appear. The following doesn't have that problem:
+
+```
+# Clear the current pane.
+bind -n C-k send-keys C-l \; clear-history
+```
