@@ -105,15 +105,13 @@ theme = "hpstr"
 
 copyright = "© 2013-{year} Nathaniel Hoag"
 paginate = 5
-disqusShortname = "pliedbyte"
-googleAnalytics = "UA-43315230-1"
 
 [params]
   subtitle = "Technical Blog"
   [params.author]
     name = "Nathaniel Hoag"
     avatar = "/images/avatar.jpg"
-    bio = "Programmer, naturalist, musician, father"
+    bio = "Dad, software engineer, naturalist, musician"
     github = "nhoag"
     twitter = "n8nl"
     linkedin = "nhoag"

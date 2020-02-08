@@ -54,7 +54,7 @@
 				<li><a href="{{ "/tags/" | relURL }}">All Tags</a></li>
 			</ul>
 		</li>
-		<li><a href="{{ "/resume/" | relURL }}">Résumé</a></li>
+		<li><a href="{{ "/resume/" | relURL }}">Resume</a></li>
 		{{ range .Site.Data.navigation.links }}
 	    <li><a href="{{ .url | relURL }}" {{ if in .url "http" }}target="_blank"{{ end }}>{{ .title }}</a></li>
 	  {{ end }}
