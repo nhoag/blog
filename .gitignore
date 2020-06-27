@@ -1,2 +1,8 @@
+# MacOS
 .DS_Store
+
+# Build Artifacts
 public
+
+# Configuration Files
+.env
